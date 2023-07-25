@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: #333;
+            color:#fefefe; */
+            font-family: 'Poppins','Sans-serif';
+            background: whitesmoke;
+        }
+
+        .container {
+            width:80%;
+            margin:auto;
+            padding:2rem 1rem;
+        }
+
+        .project--list {
+
+        }
+
+        .project--card {
+            border:1px solid #eee;
+            box-shadow: 0px 1px 6px 1px silver;
+            padding:1rem;
+            margin:1rem 0;
+            background: white;
+
+        }
+
+        .project--card .header {
+            font-weight: 600;
+            background: gainsboro;
+            padding: 5px;
+            border-radius: 3px;
+            align-items: center;
+        }
+
+        .project--card .header h2 {
+            margin-top: 0;
+            font-weight: 500;
+        }
+
+        .project--card .body {
+            padding: 1rem;
+        }
+
+        .project--card .body span {
+            font-weight: 600;
+        }
+
+        .project--card .body h3 {
+            font-weight: 400;
+        }
+
+        .project--card ul {
+            font-weight: 300;
+            padding-left: 1rem;
+            
+        }
+
+        .project--card #csg {
+            background: #005253;
+            color:white;
+        }
+
+        .project--card #imperial {
+            background: #ff7321;
+        }
+
+        .project--card #vault {
+            background: #b30078;
+            color: white;
+        }
+
+        .project--card #kibanio {
+            background: #f64473;
+        }
+
+        .project--card #edustoke {
+            background: #1b1918;
+            color: white;
+        }
+
+        .project--card #ips {
+            background: #123273;
+            color: white;
+        }
+
+        .project--card ul li {
+            margin-top:.5rem;
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1 class="text-4xl">Gurjinder Singh</h1>
+            <hr>
+            <h2 class="text-2xl">dev.gurjinder@gmail.com</h2>
+        </div>
+        <h2 class="animate__animated animate__lightSpeedInLeft text-4xl">Notable Projects</h2>
+        <div class="project--list">
+            <div class="project--card">
+                <div class="header flex justify-between" id="csg">
+                    <h2 class="text-2xl">CSG SingleView [outsourced to CSGI] <a href="https://www.csgi.com/products/encompass/revenue-management/" target="_blank">&#128279;</a> </h2>
+                    <h3>14 Months</h3>
+                </div>
+                <div class="body">
+                    <h3><span>Overview: </span>Singleview is a customer management software for telecom companies, where a Customer contact can handle billing, services, orders, subscriptions, issues of their customer. The project was configurable with modular features that could be decided as per configuration. It could adapt to the client's theming using the same config option. </h3>
+                    <h3><span>Stack: Angular, NgRx, Storybook, SASS, Jest, Cypress, Java, .Net etc.</span></h3>
+                    <h3><span>Tools: Agile, JIRA, Confluence, Bitbucket, Abstract.io, Overflow.io, Trello etc.</span></h3>
+
+                    <ul>
+                        <li>Was outsourced to CSG after clearing the interview process</li>
+                        <li>Angular application with various layers to attain loose coupling between UI, state layer, data converters and API.</li>
+                        <li>Modular application with modules like Billing, checkout, Collections, Customers, Contacts etc</li>
+                        <li>Feature development and bug fixing using TDD (Jest + Cypress)</li>
+                        <li>Atlassian Suite for seamless operations along with Agile methodology, that included sprints, demos, training sessions etc.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project--card">
+                <div class="header flex justify-between" id="imperial">
+                    <h2 class="text-2xl">Imperial brand (blu/pulze) [outsourced to Xebia] <a href="https://app.kibanio.com/#/sign-in?redirectURL=%2Fdashboard" target="_blank">&#128279;</a> </h2>
+                    <h3>6 Months(ongoing)</h3>
+                </div>
+                <div class="body">
+                    <h3><span>Overview: </span>Imperial Tobocco brand is aiming to sell vape in Europeon market, by catering to different rules and regualtions of each country in Europe. The translations and static content is handled in contentful CMS which is integrated in Next js ecommerce website.</h3>
+                    <h3><span>Stack: Next, Storybook, TypeScript, Jest, Cypress, .Net, etc.</span></h3>
+                    <h3><span>Tools: Monorepo, Azure, K8s, Docker, CI/CD, JIRA, Confluence, Figma, ContentFul, CommerceTool, Miro, Swagger etc.</span></h3>
+
+                    <ul>
+                        <li>Was outsourced to <b>Xebia</b> after clearing the interview process by their Client</li>
+                        <li>The project consist of multiple repos, which are used to achieve the intended features and maintain theming and general development. </li>
+                        <li>Notably, it has UI library, app config, api repos that has to be consumed in Pulze and Blu Next js repo which was moved to monorepo.</li>
+                        <li>To keep up the standards, TypeScript features like type checking, interfaces, utility types etc. are heavily used.</li>
+                        <li>All static data and translations are created and served from Contentful CMS, and is consumed in Pulze and Blu</li>
+                        <li>CI/CD is followed, where release pipelines are maintained. Had access to do releases for CSR(customer service) panel for staging as well as Production.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project--card">
+                <div class="header flex justify-between" id="vault">
+                    <h2 class="text-2xl">Vault [Outsourced] <a href="https://get.vault.co/" target="_blank">&#128279;</a> </h2>
+                    <h3>9 Months</h3>
+                </div>
+                <div class="body">
+                    <h3><span>Overview: </span> Vault is a loan facilitating application that caters to students, employees loan terms in USA. It has features like managing loans, advice and tools for best options, payments logs, loan calculator, reimbursement forms and logs. The application was in Ember which was migrated to react and as next step the UI was to be re done and refactored. </h3>
+                    <h3><span>Stack: React, React-Bootstrap, am4Charts, Figma, Bootstrap icons, Ruby, AWS etc.   </span></h3>
+                    <h3><span>Tools: Figma, JIRA, Confluence etc.   </span></h3>
+
+                    <ul>
+                        <li>Refactored and redeveloped the UI as per the Figma design, removing a lot of unnecessary and redundant code in react application</li>
+                        <li>Tried to incorporate better CSS styling practices with Global and local styles, reusable classes.</li>
+                        <li>Introduced shared components, DRY and KISS principle to the codebase.</li>
+                        <li>Feature development and bug fixing using TDD (Jest + Cypress)</li>
+                        <li>Atlassian Suite for seamless operations along with sprint demos and internal demos, training sessions etc.</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="project--card">
+                <div class="header flex justify-between" id="kibanio">
+                    <h2 class="text-2xl">Kibanio.com [In house] <a href="https://app.kibanio.com/#/sign-in?redirectURL=%2Fdashboard" target="_blank">&#128279;</a> </h2>
+                    <h3>8 Months</h3>
+                </div>
+                <div class="body">
+                    <h3><span>Overview: </span> Kibanio is a application that work as a mediator between a supplier and a retailer. The application is inventory management system that takes care of product management, configurable management, quotations, order and shipments. It also has customer management for the Retailer. It has a Stripe based subscription for Licenses and has role based login.  </h3>
+                    <h3><span>Stack: Angular, Angular Material, Stripe, Tailwind CSS, SASS, Django, etc   </span></h3>
+                    <h3><span>Stack: Trello, Google docs and sheets, Balsamiq Cloud etc.   </span></h3>
+
+                    <ul>
+                        <li>Developed the Angular application from scratch to end. </li>
+                        <li>Followed client's design from Balsamiq, used Angular material for development.</li>
+                        <li>Developed product, configurable parts, customer, shipments, orders and quotations management.</li>
+                        <li>For bulk upload, made a sheet upload UI along with error listing and validations.</li>
+                        <li>Used Google sheet and docs for Client feedbacks, Trello for feature listing and status.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project--card">
+                <div class="header flex justify-between" id="edustoke">
+                    <h2 class="text-2xl">Edustoke.com [in house] <a target="_blank" href="https://www.edustoke.com/"> &#128279;</a></h2>
+                    <h3>5 Months</h3>
+                </div>
+                <div class="body">
+                    <h3><span>Overview: </span> Edustoke is a school finder application that caters to Parents looking for suitable school for their child. They have various kinds of filters, details, procedures about the schools. The product work as a mediator and lead team co-ordinates between parents and the school and generates resources, schools also has tie ups with Edustoke for gaining benefits. Worked as an employee under Engineering team.  </h3>
+                    <h3><span>Stack: JavaScript, Jquery, PHP, MySQL, React etc.   </span></h3>
+                    <h3><span>Tools: SemRush, Google Analytics, Xampp, Webstorm, etc   </span></h3>
+
+                    <ul>
+                        <li>Updated UI for the website at several spaces as per requirement. </li>
+                        <li>Added pages for new tuitions module.</li>
+                        <li>Reduced homepage load times significantly by dynamic script loading for analytics, chat module etc.</li>
+                        <li>Added logic for creating XML site map for the project </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project--card">
+                <div class="header flex justify-between" id="ips">
+                    <h2 class="text-2xl">Interventional Protocol Solution [in house] <a target="_blank" href="https://protocolsolution.net/"> &#128279;</a></h2>
+                    <h3>8 Months</h3>
+                </div>
+                <div class="body">
+                    <h3><span>Overview: </span> Edustoke is a school finder application that caters to Parents looking for suitable school for their child. They have various kinds of filters, details, procedures about the schools. The product work as a mediator and lead team co-ordinates between parents and the school and generates resources, schools also has tie ups with Edustoke for gaining benefits.  </h3>
+                    <h3><span>Stack: Angular 8, Bootstrap 4, SCSS, Chart JS, .Net, MySQL Server, C#, Azure etc.</span></h3>
+                    <h3><span>Tools: Trello, Microsoft suite, Bitbucket etc. </span></h3>
+
+                    <ul>
+                        <li>Updated UI for the website at several spaces as per requirement. </li>
+                        <li>Added pages for new tuitions module.</li>
+                        <li>Reduced homepage load times significantly by dynamic script loading for analytics, chat module etc.</li>
+                        <li>Added logic for creating XML site map for the project </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
