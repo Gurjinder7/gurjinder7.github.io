@@ -103,6 +103,14 @@
             margin-top:.5rem;
             list-style-type: circle;
         }
+
+        @media screen and (max-width: 600px) {
+            
+        }
+
+        svg{
+            display: inline !important;
+        }
     </style>
 </head>
 <body>
@@ -112,20 +120,24 @@
             <hr>
             <h2 class="text-2xl">dev.gurjinder@gmail.com</h2>
         </div>
-        <h2 class="animate__animated animate__lightSpeedInLeft text-4xl">Notable Projects</h2>
-        <div class="project--list">
-            <div class="project--card">
-                <div class="header flex justify-between" id="csg">
-                    <h2 class="text-2xl">CSG SingleView [outsourced to CSGI] <a href="https://www.csgi.com/products/encompass/revenue-management/" target="_blank">&#128279;</a> </h2>
+        <h2 class="animate__animated animate__lightSpeedInLeft text-4xl max-sm:text-center max-sm:pt-5">Notable Projects</h2>
+        <div class="project--list ">
+            <div class="project--card animate__animated animate__slideInUp">
+                <div class="header flex justify-between max-sm:flex-col" id="csg">
+                    <h2 class="text-2xl">CSG SingleView <a href="https://www.csgi.com/products/encompass/revenue-management/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                      </a> </h2>
                     <h3>14 Months</h3>
                 </div>
                 <div class="body">
+                    <h3><span>Type: </span>Outsourced to CSG International, Bangalore. Worked in a team of 8 members as a frontend dev, project had strength of 80 members.</h3>
                     <h3><span>Overview: </span>Singleview is a customer management software for telecom companies, where a Customer contact can handle billing, services, orders, subscriptions, issues of their customer. The project was configurable with modular features that could be decided as per configuration. It could adapt to the client's theming using the same config option. </h3>
-                    <h3><span>Stack: Angular, NgRx, Storybook, SASS, Jest, Cypress, Java, .Net etc.</span></h3>
+                    <h3><span>Stack: Angular, NgRx, Storybook, SASS, Jest, Cypress etc.</span></h3>
                     <h3><span>Tools: Agile, JIRA, Confluence, Bitbucket, Abstract.io, Overflow.io, Trello etc.</span></h3>
 
                     <ul>
-                        <li>Was outsourced to CSG after clearing the interview process</li>
+                        <li>Was outsourced to CSG International, Bangalore after clearing the interview process</li>
                         <li>Angular application with various layers to attain loose coupling between UI, state layer, data converters and API.</li>
                         <li>Modular application with modules like Billing, checkout, Collections, Customers, Contacts etc</li>
                         <li>Feature development and bug fixing using TDD (Jest + Cypress)</li>
@@ -134,18 +146,22 @@
                 </div>
             </div>
 
-            <div class="project--card">
-                <div class="header flex justify-between" id="imperial">
-                    <h2 class="text-2xl">Imperial brand (blu/pulze) [outsourced to Xebia] <a href="https://app.kibanio.com/#/sign-in?redirectURL=%2Fdashboard" target="_blank">&#128279;</a> </h2>
-                    <h3>6 Months(ongoing)</h3>
+            <div class="project--card animate__animated animate__slideInDown">
+                <div class="header flex justify-between max-sm:flex-col" id="imperial">
+                    <h2 class="text-2xl">Imperial brands <a href="https://www.imperialbrandsplc.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                      </a> </h2>
+                    <h3>9 Months(ongoing)</h3>
                 </div>
                 <div class="body">
+                    <h3><span>Type: </span>Outsourced to Xebia Pvt. Ltd., Gurugram. Worked in a team of 10 members as frontend dev, project had strength of 60 members. </h3>
                     <h3><span>Overview: </span>Imperial Tobocco brand is aiming to sell vape in Europeon market, by catering to different rules and regualtions of each country in Europe. The translations and static content is handled in contentful CMS which is integrated in Next js ecommerce website.</h3>
-                    <h3><span>Stack: Next, Storybook, TypeScript, Jest, Cypress, .Net, etc.</span></h3>
+                    <h3><span>Stack: Next, Storybook, TypeScript, Jest, Cypress etc.</span></h3>
                     <h3><span>Tools: Monorepo, Azure, K8s, Docker, CI/CD, JIRA, Confluence, Figma, ContentFul, CommerceTool, Miro, Swagger etc.</span></h3>
 
                     <ul>
-                        <li>Was outsourced to <b>Xebia</b> after clearing the interview process by their Client</li>
+                        <li>Was outsourced to <b>Xebia Pvt. Ltd. (Gurugram)</b> after clearing the interview process by their Client</li>
                         <li>The project consist of multiple repos, which are used to achieve the intended features and maintain theming and general development. </li>
                         <li>Notably, it has UI library, app config, api repos that has to be consumed in Pulze and Blu Next js repo which was moved to monorepo.</li>
                         <li>To keep up the standards, TypeScript features like type checking, interfaces, utility types etc. are heavily used.</li>
@@ -155,14 +171,18 @@
                 </div>
             </div>
 
-            <div class="project--card">
-                <div class="header flex justify-between" id="vault">
-                    <h2 class="text-2xl">Vault [Outsourced] <a href="https://get.vault.co/" target="_blank">&#128279;</a> </h2>
+            <div class="project--card animate__animated animate__slideInUp">
+                <div class="header flex justify-between max-sm:flex-col" id="vault">
+                    <h2 class="text-2xl">Vault <a href="https://get.vault.co/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                      </a> </h2>
                     <h3>9 Months</h3>
                 </div>
                 <div class="body">
+                    <h3><span>Type: </span>Outsourced to Vault, Texas. Was the only frontend team member during the tenure, team strength of 4.</h3>
                     <h3><span>Overview: </span> Vault is a loan facilitating application that caters to students, employees loan terms in USA. It has features like managing loans, advice and tools for best options, payments logs, loan calculator, reimbursement forms and logs. The application was in Ember which was migrated to react and as next step the UI was to be re done and refactored. </h3>
-                    <h3><span>Stack: React, React-Bootstrap, am4Charts, Figma, Bootstrap icons, Ruby, AWS etc.   </span></h3>
+                    <h3><span>Stack: React, React-Bootstrap, am4Charts, Figma, Bootstrap icons, AWS etc.   </span></h3>
                     <h3><span>Tools: Figma, JIRA, Confluence etc.   </span></h3>
 
                     <ul>
@@ -176,14 +196,18 @@
             </div>
 
             
-            <div class="project--card">
-                <div class="header flex justify-between" id="kibanio">
-                    <h2 class="text-2xl">Kibanio.com [In house] <a href="https://app.kibanio.com/#/sign-in?redirectURL=%2Fdashboard" target="_blank">&#128279;</a> </h2>
+            <div class="project--card animate__animated animate__slideInDown">
+                <div class="header flex justify-between max-sm:flex-col" id="kibanio">
+                    <h2 class="text-2xl">Kibanio.com <a href="https://app.kibanio.com/#/sign-in?redirectURL=%2Fdashboard" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                      </a> </h2>
                     <h3>8 Months</h3>
                 </div>
                 <div class="body">
+                    <h3><span>Type: </span>Client project of Softprodigy, worked on frontend as main dev with a team of 2.</h3>
                     <h3><span>Overview: </span> Kibanio is a application that work as a mediator between a supplier and a retailer. The application is inventory management system that takes care of product management, configurable management, quotations, order and shipments. It also has customer management for the Retailer. It has a Stripe based subscription for Licenses and has role based login.  </h3>
-                    <h3><span>Stack: Angular, Angular Material, Stripe, Tailwind CSS, SASS, Django, etc   </span></h3>
+                    <h3><span>Stack: Angular, Angular Material, Stripe, Tailwind CSS, SASS etc.   </span></h3>
                     <h3><span>Stack: Trello, Google docs and sheets, Balsamiq Cloud etc.   </span></h3>
 
                     <ul>
@@ -196,12 +220,16 @@
                 </div>
             </div>
 
-            <div class="project--card">
-                <div class="header flex justify-between" id="edustoke">
-                    <h2 class="text-2xl">Edustoke.com [in house] <a target="_blank" href="https://www.edustoke.com/"> &#128279;</a></h2>
+            <div class="project--card animate__animated animate__slideInUp">
+                <div class="header flex justify-between max-sm:flex-col" id="edustoke">
+                    <h2 class="text-2xl">Edustoke.com <a target="_blank" href="https://www.edustoke.com/"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                      </a></h2>
                     <h3>5 Months</h3>
                 </div>
                 <div class="body">
+                    <h3><span>Type: </span>Edustoke's own product, worked as team member of Engineering team with strength of 5.</h3>
                     <h3><span>Overview: </span> Edustoke is a school finder application that caters to Parents looking for suitable school for their child. They have various kinds of filters, details, procedures about the schools. The product work as a mediator and lead team co-ordinates between parents and the school and generates resources, schools also has tie ups with Edustoke for gaining benefits. Worked as an employee under Engineering team.  </h3>
                     <h3><span>Stack: JavaScript, Jquery, PHP, MySQL, React etc.   </span></h3>
                     <h3><span>Tools: SemRush, Google Analytics, Xampp, Webstorm, etc   </span></h3>
@@ -215,14 +243,18 @@
                 </div>
             </div>
 
-            <div class="project--card">
-                <div class="header flex justify-between" id="ips">
-                    <h2 class="text-2xl">Interventional Protocol Solution [in house] <a target="_blank" href="https://protocolsolution.net/"> &#128279;</a></h2>
+            <div class="project--card animate__animated animate__slideInDown">
+                <div class="header flex justify-between max-sm:flex-col" id="ips">
+                    <h2 class="text-2xl">Interventional Protocol Solution <a target="_blank" href="https://protocolsolution.net/"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                      </a></h2>
                     <h3>8 Months</h3>
                 </div>
                 <div class="body">
+                    <h3><span>Type: </span>Client of Bentsys, Worked as the only frontend developer in the project.</h3>
                     <h3><span>Overview: </span> Edustoke is a school finder application that caters to Parents looking for suitable school for their child. They have various kinds of filters, details, procedures about the schools. The product work as a mediator and lead team co-ordinates between parents and the school and generates resources, schools also has tie ups with Edustoke for gaining benefits.  </h3>
-                    <h3><span>Stack: Angular 8, Bootstrap 4, SCSS, Chart JS, .Net, MySQL Server, C#, Azure etc.</span></h3>
+                    <h3><span>Stack: Angular 8, Bootstrap 4, SCSS, Chart JS etc.</span></h3>
                     <h3><span>Tools: Trello, Microsoft suite, Bitbucket etc. </span></h3>
 
                     <ul>
