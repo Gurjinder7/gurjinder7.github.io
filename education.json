@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Masters of Science (2024-25)",
+        "subject": "Advance Computing Science",
+        "uni": "University of East Anglia, Norwich, UK",
+        "description":"The degree involves topics such as presentation skills for computer scientists, compiler design, C#, F#, WebML, React, Database design in SQL and PostgreSQL, developing secure software using penetration testing and ethical hacking, building blocks of AI such as space search algorithms, neural network, bayesian theory etc. All subjects included practical applications where we had to develop compilers, web applications from scratch and test them for security, design databases for different kinds of scenarios and design a train ticket and delay chatbot. Furthermore, a dissertation project on NLP based web application using ML framework was submitted.",
+        "keywords":"Compilers · Database Design · Cybersecurity · Artificial Intelligence (AI) · Presentation Skills · C# · NLP · Python · React.js · PostgreSQL · TensorFlow"
+    },
+    {
+        "title": "Masters of Technology (2015-17)",
+        "subject": "Electronics and Communication",
+        "uni": "Dr. B. R. Ambedkar National Institute of Technology, Punjab, India",
+        "description":"Fully central government funded Master's with stipend from Ministry of Education, India. The admission is acquired after clearing the Graduate Aptitude Test in Engineering (GATE). I Understood image processing, signal processing, digital electronics, computer vision and other related topics and produced thesis on the topic \"Modified quaternion encryption for DICOM image\" using MATLAB. The thesis was presented at an IEEE conference, and a dissertation was also submitted for successful completion.",
+        "keywords":"MATLAB · Image Processing · Encryption · Public Speaking · Computer Vision · Verilog"
+    },
+    {
+        "title": "Bachelors of Technology (2009-13)",
+        "subject": "Electronics and Communication",
+        "uni": "Ramgarhia Institute of Engineering and Technology, Punjab, India",
+        "description":"Completed four years degree in electronics as major. I understood topics such as analog electronics, object oriented programming, linear integrated circuits, operating systems, microprocessors and microcontrollers. I was also awarded a stipend under Prime Minister scholarship for children of Army on the basis of 12th bords results. I underwent 45 days training in embedded systems using embedded C and 6 months industrial training in VLSI design. I also submitted a major project that involved using gyroscopes for moving items in 3D. ",
+        "keywords":"C++ · VHDL · Verilog · Digital Electronics · Embedded Systems · C · Operating systems · Microprocessors"
+    }
+]

@@ -1,29 +1,24 @@
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     fetch('skills.json')
     .then(response => response.json())
     .then(data => {
       for (const grid of data) {
-          console.log(grid.skill)
           insertDataIntoSkills(grid)
           
       }
       
     })
 
-    insertDataIntoExperience()
-    insertDataIntoProjects()
+    await insertDataIntoExperience()
+    await insertDataIntoProjects()
+    await insertDataIntoEducation()
 })
 
 const insertDataIntoSkills = (grid) => {
     const gridDiv = document.getElementById(grid.name)
   
     for (const skill of grid.skill) {
-            console.log(skill)
-            // console.log(divContainer(skill))
+           
             gridDiv.insertAdjacentHTML("beforeend", skillContainer(skill))
         }
 
@@ -35,7 +30,7 @@ const insertDataIntoExperience = () => {
     fetch('experience.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data)
+    
         for (const experience of data) {
         experienceDiv.insertAdjacentHTML("beforeend",experienceContainer(experience))
     }
@@ -55,6 +50,19 @@ const insertDataIntoProjects = () => {
 
 }
 
+
+const insertDataIntoEducation = () => {
+  const projectsDiv = document.getElementById("educationList")
+  fetch('education.json')
+  .then(response => response.json())
+  .then(data => {
+
+    for (const education of data) {
+      projectsDiv.insertAdjacentHTML("beforeend", educationContainer(education))
+    }
+  })
+
+}
 const skillContainer = (skill) => {
     return `
          <div class="card text-center bg-light exp-card">
@@ -62,10 +70,7 @@ const skillContainer = (skill) => {
                     <div class="card-body p-0">
                       <p class="card-text font-semibold fs-6">${skill.title}</p>
                     </div>
-                    <div class="progress" style="height: 5px;">
-                      <div class="progress-bar bg-slateblue" style="width :${skill.score}%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
+                  
          </div>
     `
 }
@@ -102,7 +107,30 @@ const projectContainer = (project) => {
                 <li>${project.description[1]}</li>
                 <li>${project.description[2]}</li>
                 <li>${project.description[3]}</li>
+                ${project.description[4] ? `<li>${project.description[4]}</li>`: ''}
+                ${project.description[5] ? `<li>${project.description[5]}</li>` :''}
+
               </ul>
             </div>
   `
 }
+
+
+const educationContainer = (education) => {
+  return `
+    <div class="card p-3 my-3 text-center bg-light">
+              <h1 class="kavoon-regular fs-2">${education.title}</h1>
+              <h2 class="the-girl-next-door-regular fs-3">${education.subject}</h2>
+              <h2 class="raleway-font1 fs-5">${education.uni}</h2>
+              <p class="justify">${education.description}</p>
+              <p class="kavoon-regular">${education.keywords}</p>
+            </div>
+  `
+}
+
+/*
+  <div class="progress" style="height: 5px;">
+                      <div class="progress-bar bg-slateblue" style="width :${skill.score}%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                    </div>
+*/
