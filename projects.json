@@ -1,0 +1,90 @@
+[
+    {
+    "name": "Vault student loans (USA)",
+    "timeline": "Dec,2023-August,2024",
+    "type":"Product, Team strength: 7",
+    "overview":"Vault is a loan facilitating application that caters to students, employees loan terms in USA. It has features like managing loans, advice and tools for best options, payments logs, loan calculator, reimbursement forms and logs. The application was in Ember which was migrated to react and as next step the UI was to be re done and refactored.",
+    "stack": "React, React-Bootstrap, am4Charts ",
+    "tools":"Figma , JIRA, Confluence, AWS",
+    "description": [
+        "Refactored and redeveloped the UI as per the Figma design, removing a lot of unnecessary and redundant code in react application.",
+        "Tried to incorporate better CSS styling practices with Global and local styles, reusable classes.",
+        "Introduced shared components, DRY and KISS principle to the codebase.",
+        "Updated the react codebase from class based to functional components."
+    ]
+    }, 
+    {
+    "name": "Imperial Brands PLC (Europe)",
+    "timeline": "Nov,2022 - Dec,2023",
+    "type":"Corporate, Team strength: 10, Project strength: 70",
+    "overview":"Imperial Tobacco brand is aiming to sell vape in European market, by catering to different rules and regulations of each country in Europe. The translations and static content is handled in contentful CMS which is integrated in Next js ecommerce website.",
+    "stack": "Next, Storybook, TypeScript, Jest, Contentful CMS",
+    "tools":"Azure, JIRA, Confluence, Figma, CommerceTool, Miro, DataDog",
+    "description": [
+        "The project consist of multiple repos, which are used to achieve the intended features and maintain theming and general development.",
+        "Notably, it has UI library, app config, api repos that has to be consumed in Pulze and Blu Next js repo which was moved to monorepo.",
+        "To keep up the standards, <i>TypeScript is used along side strong EsLinter, and Husky Git hooks.</i>",
+        "All static data and translations are created and served from Contentful CMS, and is consumed in Pulze and Blu.",
+        "CI/CD is followed, where release pipelines are maintained. Had access to do releases for CSR(customer service) panel for staging as well as Production as Team's responsibility.",
+        "Agile practices were deployed in the team, with scrum, refinement, poker, retrospective sessions."
+    ]
+    },
+    {
+        "name": "CSG Singleview (USA)",
+    "timeline": "Aug,2021 - Oct,2022",
+    "type":"Corporate, Team strength: 8, Project strength: 80",
+    "overview":"SingleView is a customer management software for telecom companies, where a Customer contact can handle billing, services, orders, subscriptions, issues of their customer. The project was configurable with modular features that could be decided as per client needs. It was able to white label into any branding and set of features.",
+    "stack": "Angular, NgRx, Storybook, SASS, Jest, Cypress",
+    "tools":"JIRA, Confluence, Bitbucket, Abstract.io, Overflow.io, Trello",
+    "description": [
+        "Angular application with various layers to attain loose coupling between UI, state layer, data converters and API.",
+        "Modular application with modules like Billing, checkout, Collections, Customers, Contacts etc.",
+        "Feature development and bug fixing included Jest and Cypress testing.",
+        "Atlassian Suite for seamless operations along with Agile methodology, that included sprints, demos, training sessions etc."
+    ]
+    },
+    {
+        "name": "Kibanio (UK)",
+    "timeline": "Dec,2020 - Jul,2021",
+    "type":"Company's client, Team strength: 4, Project strength: 8",
+    "overview":"Kibanio is a application that work as a mediator between a supplier and a retailer. The application is inventory management system that takes care of product management, configurable management, quotations, order and shipments. It also has customer management for the Retailer. It has a Stripe based subscription for Licenses and has role based login.",
+    "stack": "Angular, Angular Material, Stripe, SASS, AWS Amplify",
+    "tools":"Trello, Google docs, Balsamiq Cloud",
+    "description": [
+        "Developed the Angular application from scratch to end. ",
+        "Followed client's design from Balsamiq, used Angular material for development.",
+        "Developed product, configurable parts, customer, shipments, orders and quotations management.",
+        "For bulk upload, made a sheet upload UI along with error listing and validations.",
+        "Used Google sheet and docs for Client feedbacks, Trello for feature listing and status."
+    ]
+    },
+    {
+        "name": "Edustoke (India)",
+    "timeline": "Jul,2020 - Nov,2020",
+    "type":"Product, Team strength: 5, Project strength: 40",
+    "overview":"Edustoke is a school finder application that caters to Parents looking for suitable school for their child. They have various kinds of filters, details, procedures about the schools. The product work as a mediator and lead team co-ordinates between parents and the school and generates resources, schools also has tie ups with Edustoke for gaining benefits. Worked as an employee under Engineering team.",
+    "stack": "JavaScript, Jquery, PHP, MySQL, React",
+    "tools":"SemRush, Google Analytics, JIRA, WebStorm,",
+    "description": [
+        "Updated UI for the website as per updated design specifications.",
+        "Added pages for new tuitions module that was being under development and beta phase.",
+        "Reduced homepage load times significantly by dynamic script loading for analytics, chat module etc.",
+        "Added logic for creating XML site map for the project."
+    ]
+    },
+     {
+        "name": "Interventional Protocol Solution (Sweden)",
+    "timeline": "Jun,2019 - May,2020",
+    "type":"Company's client, Team strength: 4",
+    "overview":"IPS is an all in one patient data management software system developed for the healthcare sector. The project included windows application for scheduling, registering, managing patient’s data, defining case, protocols for possible diagnosis, imaging and other features. It has a web application to facilitate mobility and provide basic features same as window application on registered tablets.",
+    "stack": "Angular 8, Bootstrap 4, SCSS, Chart JS",
+    "tools":"Trello, Microsoft suite, Bitbucket",
+    "description": [
+        "Redesigned the UI of the application as per new designs.",
+        "Changed architecture of the application for using reusable components, styles etc.",
+        "Added additional features to the application as per necessity like switching between cards and list view, better filtering mechanics, using thumbnails images for faster loading, lazy loading etc.",
+        "Reduced the bundle size by removing redundant code base, components, files etc."
+    ]
+    }
+    
+]

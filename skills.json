@@ -1,0 +1,207 @@
+[
+    {
+       "name": "essential",
+       "skill": [
+        {
+        "title": "JavaScript",
+        "url": "javascript.svg",
+        "score": 90
+        },
+        {
+        "title": "CSS",
+        "url": "css3.svg",
+        "score": 95
+        },
+        {
+        "title": "HTML",
+        "url": "html5.svg",
+        "score": 90
+        },
+        {
+        "title": "TypeScript",
+        "url": "typescript.svg",
+        "score": 80
+        },
+        {
+        "title": "Python",
+        "url": "python.svg",
+        "score": 70
+        },
+        {
+        "title": "Go",
+        "url": "golang.svg",
+        "score": 50
+        }
+       ] 
+    },
+        {
+       "name": "frontend",
+       "skill": [
+        {
+        "title": "Angular",
+        "url": "angular.svg",
+        "score": 75
+        },
+        {
+        "title": "React",
+        "url": "react.svg",
+        "score": 85
+        },
+        {
+        "title": "Vue",
+        "url": "vuejs.svg",
+        "score": 60
+        },
+        {
+        "title": "Next",
+        "url": "nextjs.svg",
+        "score": 60
+        },
+        {
+        "title": "Redux",
+        "url": "redux.svg",
+        "score": 90
+        }
+
+       ] 
+    },
+     {
+       "name": "css",
+       "skill": [
+        {
+        "title": "Material",
+        "url": "material.svg",
+        "score": 75
+        },
+        {
+        "title": "Tailwind",
+        "url": "tailwind.svg",
+        "score": 85
+        },
+        {
+        "title": "Bootstrap",
+        "url": "bootstrap.svg",
+        "score": 60
+        },
+        {
+        "title": "Bulma",
+        "url": "./web-tech/bulma.svg",
+        "score": 60
+        },
+        {
+        "title": "Chakra",
+        "url": "chakraui.svg",
+        "score": 90
+        }
+
+       ] 
+    },
+     {
+       "name": "dev",
+       "skill": [
+        {
+        "title": "Jest",
+        "url": "jest.svg",
+        "score": 75
+        },
+        {
+        "title": "Cypress",
+        "url": "cypress.svg",
+        "score": 85
+        },
+        {
+        "title": "Git",
+        "url": "git.svg",
+        "score": 60
+        },
+        {
+        "title": "Webassembly",
+        "url": "webassembly.svg",
+        "score": 60
+        },
+        {
+        "title": "TensorFlow",
+        "url": "tensorflow.svg",
+        "score": 90
+        }
+
+       ] 
+    },
+     {
+       "name": "productivity",
+       "skill": [
+        {
+        "title": "JIRA",
+        "url": "jira.svg",
+        "score": 75
+        },
+        {
+        "title": "Confluence",
+        "url": "confluence.svg",
+        "score": 85
+        },
+        {
+        "title": "Trello",
+        "url": "trello.svg",
+        "score": 60
+        },
+        {
+        "title": "Github",
+        "url": "github.svg",
+        "score": 60
+        },
+        {
+        "title": "Bitbucket",
+        "url": "bitbucket.svg",
+        "score": 90
+        },
+        {
+        "title": "Asana",
+        "url": "asana.svg",
+        "score": 90
+        }
+       ] 
+    },
+     {
+       "name": "backend",
+       "skill": [
+        {
+        "title": "Node",
+        "url": "nodejs.svg",
+        "score": 75
+        },
+        {
+        "title": "Prisma",
+        "url": "prisma.svg",
+        "score": 85
+        },
+        {
+        "title": "Docker",
+        "url": "docker.svg",
+        "score": 60
+        },
+        {
+        "title": "Nest",
+        "url": "nextjs.svg",
+        "score": 60
+        },
+        {
+        "title": "PostgreSQL",
+        "url": "postgresql.svg",
+        "score": 90
+        },
+        {
+        "title": "Mongodb",
+        "url": "mongodb.svg",
+        "score": 90
+        },
+          {
+        "title": "Redis",
+        "url": "redis.svg",
+        "score": 90
+        }
+
+       ] 
+    }
+   
+]

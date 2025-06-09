@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Summer",
+        "keywords": [
+            "Software Consultant",
+            "Jul,2024 - August, 2024",
+            "New York, USA"
+        ],
+        "style": "left",
+        "description": "Vault was acquired by Summer, I joined on a contract to help in transition of Vault modules into Summer and support changes in the codebase as required by the team. I worked on imminently required frontend changes and was involved in regular team meetings."
+    },
+    {
+        "title": "Vault",
+        "keywords": [
+            "Frontend Consultant",
+            "October,2023 - June,2024",
+            "Texas, USA"
+        ],
+        "style": "right",
+        "description": "Joined as the sole Frontend consultant, I worked on refactoring the React web app codebase, improved the load times. I also made a new admin panel with modern React stack due to legacy issue and bugs with the older admin panel."
+    },
+    {
+        "title": "Softprodigy",
+        "keywords": [
+            "Sr. Software Engineer",
+            "Dec,2020 - Dec,2023",
+            "Mohali, India"
+        ],
+        "style": "left",
+        "description": "Worked on Angular projects for company's client and then outsourced to CSG after clearing their interview. I was also involved in conducting interviews, managing team of juniors and gave tutorials. I joined the Imperial brand project as a contractor after clearing interviews for NextJs."
+    },
+    {
+        "title": "Edustoke",
+        "keywords": [
+            "Web Developer",
+            "Jul,2020 - Nov,2020",
+            "Gurugram, India"
+        ],
+        "style": "right",
+        "description": "Worked on the product homepage for improving loading performance by loading scripts dynamically, reworking the UI for better look and user experience and experimentation with online tuition module with open source video conferencing."
+    },
+        {
+        "title": "Bentsys",
+        "keywords": [
+            "Software Engineer",
+            "March,2018 - May,2020",
+            "Mohali, India"
+        ],
+        "style": "left",
+        "description": "Joined as GET, learned vanilla JS, HTML and CSS for starting basic projects. Moved on to Angular and Vue stack and implemented company's project in the given deadlines. I focussed on core technologies of frontend, worked with Firebase and GCM."
+    }
+]
