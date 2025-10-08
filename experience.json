@@ -16,7 +16,7 @@
             "Jul,2024 - August, 2024",
             "New York, USA"
         ],
-        "style": "left",
+        "style": "right",
         "description": "Vault was acquired by Summer. I joined on a contract to help in the transition of Vault modules into Summer and support changes in the codebase as required by the team. I worked on immediately required frontend changes and was involved in regular team meetings."
     },
     {
@@ -26,7 +26,7 @@
             "October,2023 - June,2024",
             "Texas, USA"
         ],
-        "style": "right",
+        "style": "left",
         "description": "Joined as the sole Frontend consultant, I worked on refactoring the React web app codebase and improved the load times. I also made a new admin panel with a modern React stack due to legacy issues and bugs with the older admin panel."
     },
     {
@@ -36,7 +36,7 @@
             "Dec,2020 - Dec,2023",
             "Mohali, India"
         ],
-        "style": "left",
+        "style": "right",
         "description": "Worked on Angular projects for the company's client and then outsourced to CSG after clearing their interview. I was also involved in conducting interviews, managing a team of juniors, and giving tutorials. I joined the Imperial brand project as a contractor after clearing interviews for NextJS."
     },
     {
@@ -46,7 +46,7 @@
             "Jul,2020 - Nov,2020",
             "Gurugram, India"
         ],
-        "style": "right",
+        "style": "left",
         "description": "Worked on the product homepage for improving loading performance by loading scripts dynamically, reworking the UI for a better look and user experience, and experimentation with an online tuition module with open source video conferencing."
     },
         {
@@ -56,7 +56,7 @@
             "March,2018 - May,2020",
             "Mohali, India"
         ],
-        "style": "left",
-        "description": "Joined as GET, learned vanilla JS, HTML and CSS for starting basic projects. Moved on to the Angular and Vue stack and implemented the company's project within the given deadlines. I focused on core technologies of frontend, worked with Firebase and GCM."
+        "style": "right",
+        "description": "Joined as GET, learned vanilla JS, HTML, and CSS for starting basic projects. Moved on to the Angular and Vue stack and implemented the company's project within the given deadlines. I focused on core technologies of frontend, worked with Firebase and GCM."
     }
 ]
