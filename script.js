@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     await insertDataIntoExperience()
     await insertDataIntoProjects()
+    await insertDataIntoPublished()
     await insertDataIntoEducation()
 })
 
@@ -50,6 +51,18 @@ const insertDataIntoProjects = () => {
 
 }
 
+const insertDataIntoPublished = () => {
+  const publishDiv = document.getElementById("publishList")
+  fetch('published.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    for (const project of data) {
+      publishDiv.insertAdjacentHTML("beforeend", publishContainer(project))
+    }
+  })
+
+}
 
 const insertDataIntoEducation = () => {
   const projectsDiv = document.getElementById("educationList")
@@ -92,6 +105,7 @@ const experienceContainer = (experience) => {
 }
 
 const projectContainer = (project) => {
+  
   return `
         <div class="card2 p-3 mb-5 text-start bg-light">
               <h1 class="kavoon-regular fs-2">${project.name}</h1>
@@ -115,6 +129,18 @@ const projectContainer = (project) => {
   `
 }
 
+const publishContainer = (project) => {
+  return `
+        <div class="card2 p-3 mb-5 text-start bg-light">
+        <div class="d-flex justify-content-between">
+          <h1 class="kavoon-regular fs-2">${project.name}</h1>
+          <a class="the-girl-next-door-regular fs-3" href="${project.url}" target="_blank">Link</a>
+        </div>
+              <h3 class="fs-5"><span>Type: </span> ${project.type}</h3>
+              <h3 class="fs-5"><span>Overview: </span> ${project.overview} </h3>
+            </div>
+  `
+}
 
 const educationContainer = (education) => {
   return `

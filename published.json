@@ -1,0 +1,39 @@
+[
+  {
+    "name": "@gurjinder7/react-drag-and-drop",
+    "url": "https://www.npmjs.com/package/@gurjinder7/react-drag-and-drop",
+    "type": "React package",
+    "overview": "Reusable and customizable React component to facilitate drag and drop."
+  },
+  {
+    "name": "@gurjinder7/encrypt-localstorage",
+    "url": "https://www.npmjs.com/package/@gurjinder7/encrypt-localstorage",
+    "type": "Browser NPM package",
+    "overview": "Functions to encode local storage values"
+  },
+  {
+    "name": "regex-simple-checks",
+    "url": "https://www.npmjs.com/package/regex-simple-checks",
+    "type": "NPM package",
+    "overview": "Common regex checks that you can use in the JavaScript world without looking for them on Google!"
+  },
+  {
+    "name": "@gurjinder7/console-color",
+    "url": "https://www.npmjs.com/package/@gurjinder7/console-color",
+    "type": "Browser NPM package",
+    "overview": "https://www.npmjs.com/package/@gurjinder7/console-color"
+  },
+  {
+    "name": "true black dark theme",
+    "url": "https://marketplace.visualstudio.com/items?itemName=Gurjinder7.true-black-dark-theme&ssr=false#overview",
+    "type": "Visual Studio Code Theme",
+    "overview": "his theme has a dark black glossy background with texts only in shades of white/silver/gray. A true dark theme for the feeling of a monochromatic world of whites on black. "
+  },
+   {
+    "name": "Modified quaternion encryption for DICOM image",
+    "url": "https://ieeexplore.ieee.org/document/8229951",
+    "type": "Conference Paper on Image Encryption submitted during Masters and published in IEEE Xplore",
+    "overview": "This paper studies and implements the existing encryption algorithm on 16-bit DICOM images using quaternion. The modification in algorithm made the execution faster without losing any details or compromising the quality."
+  }
+  
+]
