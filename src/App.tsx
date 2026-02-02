@@ -172,7 +172,7 @@ function App() {
                                 }}
                                 href="https://linkedin.com/in/gurjinder7" target='_blank'
                             >
-                                <img className="w-6" src="../web-tech/linkedin.svg" alt="" />
+                                <img className="w-6" src="/linkedin.svg" alt="" />
                                 {/* <a href='https://github.com/gurjinder7' target='_blank'><img className="w-6 bg-black" src='../web-tech/github.svg' /></a> */}
 
                             </motion.a>
@@ -191,7 +191,25 @@ function App() {
 
                             >
 
-                                <img className="w-6 bg-black" src='../web-tech/github.svg' />
+                                <img className="w-6 bg-black" src='/github.svg' />
+
+                            </motion.a>
+                              <motion.a className='flex gap-3 p-2 border-2 border-red-700 shadow'
+                                whileHover={{ scale: 3.1 }}
+                                animate={{
+                                    rotate: [360, 180, 0]
+                                }}
+                                transition={{
+                                    duration: 0.5,
+                                    ease: "easeInOut",
+                                    times: [0, 0.5, 1],
+                                    // repeat: 1
+                                }}
+                                href='https://www.npmjs.com/~gurjinder7' target='_blank'
+
+                            >
+
+                                <img className="w-6 bg-black" src='/npm.svg' />
 
                             </motion.a>
                         </div>
