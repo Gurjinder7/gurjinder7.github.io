@@ -24,6 +24,7 @@ const Skills = ({skillName}: {skillName:string}) => {
                 ease: [0, 0.71, 0.2, 1.01],
                 // repeat: Infinity,
             }}
+            className=""
         >
             <img src={`../../web-tech/${skillName}.svg`} className="imgClass" alt=""/>
         </motion.div>
@@ -31,8 +32,8 @@ const Skills = ({skillName}: {skillName:string}) => {
 }
 
 const ball = {
-    width: 100,
-    height: 100,
+    width: 70,
+    height: 70,
     borderRadius: "50%",
     background: "gainsboro",
     display: "flex",
