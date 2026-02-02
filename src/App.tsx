@@ -1,12 +1,10 @@
 import './App.css'
-import { motion, useTime, useTransform } from 'motion/react'
-import Skills from "./skills/skills.tsx";
+import { motion} from 'motion/react'
 import { Activity, useState } from 'react';
 
 
 function App() {
 
-    const [showTheDialog, setShowTheDialog] = useState(false);
     const [showBasicInfoDialog, setShowBasicInfoDialog] = useState(false);
     const [showProgrammingDialog, setShowProgrammingDialog] = useState(false);
     const [showProjectsDialog, setShowProjectsDialog] = useState(false)
@@ -14,14 +12,7 @@ function App() {
     const [showTechnologyDialog, setShowTechnologyDialog] = useState(false)
 
     const [showMap, setShowMap] = useState(false)
-    const time = useTime();
-    const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false })
-
-
-    const showClick = () => {
-        alert('hey')
-    }
-
+    
     const closeModal = () => {
         setShowBasicInfoDialog(false)
         setShowProgrammingDialog(false)
