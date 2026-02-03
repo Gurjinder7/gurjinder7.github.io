@@ -106,7 +106,7 @@ function App() {
                     <area shape="circle" coords="300,300,30"
                         onClick={() => setShowBasicInfoDialog(true)}
                     />
-                    <area shape="circle" coords="460,140,40"
+                    <area shape="circle" coords="470,150,30"
                         onClick={() => setShowProjectsDialog(true)}
                     />
                     <area shape="circle" coords="220,170,30"
@@ -129,10 +129,10 @@ function App() {
                             opacity: [1, 0],
                         }}
                         transition={{
-                            repeat: 0,
+                            repeat: Infinity,
                             duration: 5,
                             times: [1, 0.8, 0.5, 0.3, 0],
-                            repeatDelay: 1
+                            repeatDelay: 3
                         }}>Hover to treasure map if you are lost!</motion.span>
                 </p>
 
@@ -172,7 +172,7 @@ function App() {
                                 }}
                                 href="https://linkedin.com/in/gurjinder7" target='_blank'
                             >
-                                <img className="w-6" src="/linkedin.svg" alt="" />
+                                <img className="w-6" src="/linkedin.svg" alt="linkedin" />
                                 {/* <a href='https://github.com/gurjinder7' target='_blank'><img className="w-6 bg-black" src='../web-tech/github.svg' /></a> */}
 
                             </motion.a>
@@ -221,7 +221,7 @@ function App() {
 
                         <motion.span className='w-15 fixed bottom-10 cursor-pointer' onClick={() => setShowBasicInfoDialog(false)}
                             whileHover={{ rotate: 360 }}>
-                            <img src="/close.svg" alt="" />
+                            <img src="/close.svg" alt="close" />
                         </motion.span>
                     </div>
                     {/* <ul>
@@ -276,7 +276,7 @@ function App() {
 
                         <motion.span className='w-15 fixed bottom-10 cursor-pointer' onClick={closeModal}
                             whileHover={{ rotate: 360 }}>
-                            <img src="/close.svg" alt="" />
+                            <img src="/close.svg" alt="close" />
                         </motion.span>
                     </div>
 
@@ -337,7 +337,7 @@ function App() {
 
                         <motion.span className='w-15 fixed bottom-10 cursor-pointer' onClick={closeModal}
                             whileHover={{ rotate: 360 }}>
-                            <img src="/close.svg" alt="" />
+                            <img src="/close.svg" alt="close" />
                         </motion.span>
                     </div>
 
@@ -410,7 +410,7 @@ function App() {
 
                         <motion.span className='w-15 fixed bottom-10 cursor-pointer' onClick={closeModal}
                             whileHover={{ rotate: 360 }}>
-                            <img src="/close.svg" alt="" />
+                            <img src="/close.svg" alt="close" />
                         </motion.span>
                     </div>
 
@@ -443,17 +443,17 @@ function App() {
                     <div className='w-1/2 flex flex-col items-center'>
 
 
-                        <h1 className='my-3'>Languages I work on...</h1>
+                        <h1 className='my-3'>Where I studied...</h1>
                         <div className='flex justify-center gap-x-16 w-full'>
                             <ul>
                                 <li className="flex flex-col items-center font-bold my-5">
-                                    <img src="/uea.webp" className='w-12 h-12 p-2 border-2  border-black' alt="javascript" />
+                                    <img src="/uea.webp" className='w-12 h-12 p-2 border-2  border-black' alt="UEA logo" />
                                     <p className='text-lg'>Masters of Science</p>
                                     <p>University of East Anglia, Norwich, United Kingdom</p>
                                     <p className='font-normal'>Advanced Computing Science</p>
                                     <p className='font-normal'>4.0 GPA</p>
                                     </li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/nit.webp" className='w-12 h-12 p-2 border-2 border-blue-500' alt="typescript" />
+                                <li className="flex flex-col items-center font-bold my-5"><img src="/nit.webp" className='w-12 h-12 p-2 border-2 border-blue-500' alt="NIT logo" />
                                  <p className='text-lg'>Master's of Technology</p>
                                     <p>Dr. B. R. Ambedkar National University of Technology, Jalandhar, India</p>
                                     
@@ -461,7 +461,7 @@ function App() {
                                     <p className='font-normal'>Electronics and Communication Engineering</p>
                                     <p className='font-normal'>8.22 CGPA</p>
                                 </li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/ptu.webp" className='w-12 h-12 p-2 border-2 border-cyan-300' alt="go" />
+                                <li className="flex flex-col items-center font-bold my-5"><img src="/ptu.webp" className='w-12 h-12 p-2 border-2 border-cyan-300' alt="PTU logo" />
                                  <p className='text-lg'>Bachelor's of Technology</p>
                                     <p>Punjab Technical University, Jalandhar, India</p>
                                     
@@ -495,12 +495,12 @@ function App() {
                 className='p-4 right-0 fixed bottom-0 cursor-pointer'
                 onMouseOver={() => setShowMap(true)}
                 onMouseLeave={() => setShowMap(false)}
-            ><img src="/map.svg" className="w-12" alt="" />
+            ><img src="/map.svg" className="w-12" alt="map" />
             </motion.div>
 
             <Activity mode={showMap ? 'visible' : 'hidden'}>
                 <div className='fixed top-0 left-0 w-1/2 p-3' >
-                    <img src="/mandala1 copy.png" className="w-2/4 h-2/4" alt="" />
+                    <img src="/mandala1 copy.png" className="w-2/4 h-2/4" alt="treasure map" />
                 </div>
             </Activity>
 
