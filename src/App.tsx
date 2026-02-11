@@ -101,12 +101,12 @@ function App() {
                                     duration: 0.5,
                                     ease: "easeInOut",
                                     times: [0, 0.5, 1],
-                                    // repeat: 1
+                                    
                                 }}
                                 href="https://linkedin.com/in/gurjinder7" target='_blank'
                             >
                                 <img className="w-6" src="/linkedin.svg" alt="linkedin" />
-                                {/* <a href='https://github.com/gurjinder7' target='_blank'><img className="w-6 bg-black" src='../web-tech/github.svg' /></a> */}
+                             
 
                             </motion.a>
                             <motion.a className='flex gap-3 p-2 border-2 border-gray-500 shadow'
@@ -118,7 +118,6 @@ function App() {
                                     duration: 0.5,
                                     ease: "easeInOut",
                                     times: [0, 0.5, 1],
-                                    // repeat: 1
                                 }}
                                 href='https://github.com/gurjinder7' target='_blank'
 
@@ -136,7 +135,6 @@ function App() {
                                     duration: 0.5,
                                     ease: "easeInOut",
                                     times: [0, 0.5, 1],
-                                    // repeat: 1
                                 }}
                                 href='https://www.npmjs.com/~gurjinder7' target='_blank'
 
@@ -151,6 +149,7 @@ function App() {
                         <p className='text-justify my-3'>
                             A frontend developer with the intention of making products that contribute to society. Really into making challenging UI, very much interested in concurring backend with Go. Trying to create a few products that can introduce transparency and trust in social causes.
                         </p>
+                        <p>I am familiar with various aspects of Software Development Life Cycle -  I contribute to UX design, UI development, Database design, API development, Testing (E2E, Unit, Integration, A/B), CI/CD pipelines.</p>
 
                         <motion.span className='w-15 fixed bottom-10 cursor-pointer' onClick={() => setShowBasicInfoDialog(false)}
                             whileHover={{ rotate: 360 }}>
