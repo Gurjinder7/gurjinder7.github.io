@@ -57,7 +57,11 @@ export const BackendSkills:SkillItem[] = [
     alt:"Prisma logo",
     name:"Prisma"
     },
-    
+    {
+    src:"/redis.svg",
+    alt:"Redis logo",
+    name:"Redis"
+    },
 ]
 
 export const AdditionalSkills:SkillItem[] = [
@@ -85,6 +89,11 @@ export const AdditionalSkills:SkillItem[] = [
     src:"/sass.svg",
     alt:"SASS logo",
     name:"SASS"
+    },
+    {
+    src:"/tensorflow.svg",
+    alt:"Tensorflow logo",
+    name:"TensorFlow"
     },
 ]
 
