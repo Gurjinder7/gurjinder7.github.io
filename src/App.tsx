@@ -1,6 +1,14 @@
 import './App.css'
-import { motion} from 'motion/react'
+import { motion } from 'motion/react'
 import { Activity, useState } from 'react';
+import { educationList } from './utils/education';
+import EducationCard from './components/education/EducationCard.component';
+import { AdditionalSkills, BackendSkills, UISkills } from './utils/skill';
+import Skills from './components/skills/skills.component';
+import { ProjectList } from './utils/project';
+import ProjectCard from './components/projects/projects.component';
+import { LanguageList } from './utils/language';
+import LanguageComponent from './components/language/LanguageCard.component';
 
 
 function App() {
@@ -12,7 +20,7 @@ function App() {
     const [showTechnologyDialog, setShowTechnologyDialog] = useState(false)
 
     const [showMap, setShowMap] = useState(false)
-    
+
     const closeModal = () => {
         setShowBasicInfoDialog(false)
         setShowProgrammingDialog(false)
@@ -23,79 +31,8 @@ function App() {
 
     return (
         <div className='relative h-screen'>
-            <div className='container'>
-                {/* <p className='text-4xl font-bold'>Gurjinder Singh</p> */}
 
-                {/* <motion.div
-                    style={tinyBox}
-                    whileHover={{ scale: 1.5, rotate: 0 }}
-                    animate={{
-                        scale: [1, 2, 2, 1, 1],
-                        rotate: [0, 0, 180, 180, 0],
-                        borderRadius: ["0%", "0%", "50%", "50%", "0%"],
-                    }}
-                    transition={{
-                        duration: 0.7,
-                        ease: "easeInOut",
-                        times: [0, 0.2, 0.5, 0.8, 1],
-
-                    }}
-                    className='p-4 w-25 fixed bottom-20'
-                    onClick={() => setShowTheDialog(!showTheDialog)}
-                >What I do!</motion.div> */}
-            </div>
-
-            {/*<h2>New React based portfolio coming soon...</h2>*/}
-            {/*<motion.h2*/}
-            {/*transition={{type:"spring", duration:2}}*/}
-            {/*animate={{rotateY: 90}}>I work with....</motion.h2>*/}
-
-
-            {/* <hr /> */}
-
-            {/*<Skills skillName="angular"/>*/}
-            {/* <motion.section
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                animate={{
-                    scale: [0, 1]
-                }}
-                transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                    times: [0, 1],
-
-
-                }}
-                className='my-3'
-                style={{
-                    // height: '100vh'
-                }}>
-                <p>
-                    A frontend developer with the intention of making products that contribute to society. Really into making challenging UI, very much interested in concurring backend with Go. Trying to create a few products that can introduce transparency and trust in social causes.
-                </p>
-            </motion.section> */}
-
-
-            {/* <motion.section
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                animate={{
-                    scale: [0, 1]
-                }}
-                transition={{
-                    duration: 2,
-                    ease: "easeInOut",
-                    times: [0, 1],
-
-
-                }}
-                >
-                    <h1>Am I suitable for the job, let's find out!</h1>
-            </motion.section> */}
-
-            <div className="flex justify-center items-center">
-
+            <div className="flex justify-center items-center pt-5">
 
                 <img className='w-[600px] h-[600px] cursor-not-allowed' src="/mandala1.png" alt="asdasd" useMap='#workmap' />
 
@@ -118,12 +55,8 @@ function App() {
                 </map>
 
             </div>
-            <motion.section
-            // initial={{ filter: "blur(10px)" }}
-            // animate={{ filter: "none" }}
-
-            >
-                <p className='text-black font-semibold mt-5 text-lg'>
+            <motion.section>
+                <p className='text-black font-semibold mt-5 text-lg text-center'>
                     <motion.span
                         animate={{
                             opacity: [1, 0],
@@ -156,7 +89,7 @@ function App() {
                     <div className='w-1/2 flex flex-col items-center'>
 
 
-                        <h1 className='my-3'>Gurjinder Singh</h1>
+                        <h1 className='my-3 text-4xl font-bold'>Gurjinder Singh</h1>
                         <div className='flex justify-center gap-x-16 w-full'>
 
                             <motion.a className='flex gap-3 p-2 border-2 border-teal-800'
@@ -194,7 +127,7 @@ function App() {
                                 <img className="w-6 bg-black" src='/github.svg' />
 
                             </motion.a>
-                              <motion.a className='flex gap-3 p-2 border-2 border-red-700 shadow'
+                            <motion.a className='flex gap-3 p-2 border-2 border-red-700 shadow'
                                 whileHover={{ scale: 3.1 }}
                                 animate={{
                                     rotate: [360, 180, 0]
@@ -224,21 +157,6 @@ function App() {
                             <img src="/close.svg" alt="close" />
                         </motion.span>
                     </div>
-                    {/* <ul>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>Go</li>
-                        <li>Python</li>
-                        <li></li>
-                    </ul> */}
-                    {/* <motion.section className="skillContainer max-sm:flex-col max-sm:flex-wrap"
-                        transition={{ type: "spring", bounce: 2.25, duration: 2.2 }}
-                        animate={{ rotateX: 360 }}
-                    >
-                        {coreSkill.map((item: string) => (
-                            <Skills skillName={item} />
-                        ))}
-                    </motion.section> */}
                 </motion.section>
             </Activity>
 
@@ -260,15 +178,10 @@ function App() {
                     <div className='w-1/2 flex flex-col items-center'>
 
 
-                        <h1 className='my-3'>Languages I work on...</h1>
+                        <h1 className='my-3 text-4xl font-bold'>Languages I work on...</h1>
                         <div className='flex justify-center gap-x-16 w-full'>
                             <ul>
-                                <li className="flex items-center font-bold my-5"><img src="/javascript.svg" className='w-12 h-12 p-2 border-2 border-yellow-300' alt="javascript" />______________________________ JavaScript</li>
-                                <li className="flex items-center font-bold my-5"><img src="/typescript.svg" className='w-12 h-12 p-2 border-2 border-blue-500' alt="typescript" />______________________________ TypeScript</li>
-                                <li className="flex items-center font-bold my-5"><img src="/golang.svg" className='w-12 h-12 p-2 border-2 border-cyan-300' alt="go" />______________________________ Go</li>
-                                <li className="flex items-center font-bold my-5"><img src="/python.svg" className='w-12 h-12 p-2 border-2 border-yellow-300' alt="Python" />______________________________ Python</li>
-                                <li className="flex items-center font-bold my-5"><img src="/html5.svg" className='w-12 h-12 p-2 border-2 border-orange-500' alt="HTML" />______________________________ HTML5</li>
-                                <li className="flex items-center font-bold my-5"><img src="/css3.svg" className='w-12 h-12 p-2 border-2 border-blue-300' alt="CSS" />______________________________ CSS3</li>
+                               {LanguageList.map(language => <LanguageComponent language={language} key={language.name} />)} 
 
                             </ul>
 
@@ -280,14 +193,6 @@ function App() {
                         </motion.span>
                     </div>
 
-                    {/* <motion.section className="skillContainer max-sm:flex-col max-sm:flex-wrap"
-                        transition={{ type: "spring", bounce: 2.25, duration: 2.2 }}
-                        animate={{ rotateX: 360 }}
-                    >
-                        {coreSkill.map((item: string) => (
-                            <Skills skillName={item} />
-                        ))}
-                    </motion.section> */}
                 </motion.section>
             </Activity>
 
@@ -309,27 +214,10 @@ function App() {
                     <div className='w-1/2 flex flex-col items-center'>
 
 
-                        <h1 className='my-3'>Projects I worked on...</h1>
+                        <h1 className='my-3 text-4xl font-bold'>Projects I worked on...</h1>
                         <div className='flex justify-center gap-x-16 w-full'>
                             <ul>
-                                <li className="flex items-center font-bold my-5"><img src="/brief.svg" className='w-12 h-12 p-2 border-2 border-gray-900' alt="briefcase" />______________________________ Blu.com <a href="https://blu.com" target='_blank'>
-                                    <img src="/link.svg" className='w-6 h-6' alt="project link" />
-                                </a> </li>
-                                <li className="flex items-center font-bold my-5"><img src="/brief.svg" className='w-12 h-12 p-2 border-2 border-gray-900' alt="briefcase" />______________________________ CSG SingleView <a href="https://www.csgi.com/products/singleview/" target='_blank'>
-                                    <img src="/link.svg" className='w-6 h-6' alt="project link" />
-                                </a> </li>
-                                <li className="flex items-center font-bold my-5"><img src="/brief.svg" className='w-12 h-12 p-2 border-2 border-gray-900' alt="briefcase" />______________________________ Edustoke.com <a href="https://www.edustoke.com/" target='_blank'>
-                                    <img src="/link.svg" className='w-6 h-6' alt="project link" />
-                                </a> </li>
-                                <li className="flex items-center font-bold my-5"><img src="/brief.svg" className='w-12 h-12 p-2 border-2 border-gray-900' alt="briefcase" />______________________________ Goldwise UK <a href="https://www.goldwise.com/" target='_blank'>
-                                    <img src="/link.svg" className='w-6 h-6' alt="project link" />
-                                </a> </li>
-                                <li className="flex items-center font-bold my-5"><img src="/brief.svg" className='w-12 h-12 p-2 border-2 border-gray-900' alt="briefcase" />______________________________ Vault Student Loans Benefits <a href="https://www.meetsummer.com/" target='_blank'>
-                                    <img src="/link.svg" className='w-6 h-6' alt="project link" />
-                                </a> </li>
-                                <li className="flex items-center font-bold my-5"><img src="/brief.svg" className='w-12 h-12 p-2 border-2 border-gray-900' alt="briefcase" />______________________________ Pulze.com <a href="https://www.pulze.com/" target='_blank'>
-                                    <img src="/link.svg" className='w-6 h-6' alt="project link" />
-                                </a> </li>
+                               {ProjectList.map(project => <ProjectCard key={project.name} project={project} />)}
 
                             </ul>
 
@@ -340,15 +228,6 @@ function App() {
                             <img src="/close.svg" alt="close" />
                         </motion.span>
                     </div>
-
-                    {/* <motion.section className="skillContainer max-sm:flex-col max-sm:flex-wrap"
-                        transition={{ type: "spring", bounce: 2.25, duration: 2.2 }}
-                        animate={{ rotateX: 360 }}
-                    >
-                        {coreSkill.map((item: string) => (
-                            <Skills skillName={item} />
-                        ))}
-                    </motion.section> */}
                 </motion.section>
             </Activity>
 
@@ -370,39 +249,19 @@ function App() {
                     <div className='w-1/2 flex flex-col items-center'>
 
 
-                        <h1 className='my-3'>Stack I am familiar with...</h1>
+                        <h1 className='my-3 text-4xl font-bold'>I am familiar with...</h1>
                         <div className='flex justify-center gap-x-16 w-full'>
                             <ul>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/react.svg" className='w-12 h-12 p-2 bg-black border-2 border-black' alt="javascript" />React</li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/nextjs.svg" className='w-12 h-12 p-2 bg-black border-2 border-black' alt="typescript" />Next.js</li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/angular.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Angular</li>
-                              
-                              
-                         
-                                     <li className="flex flex-col items-center font-bold my-5"><img src="/tailwind.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Tailwind CSS</li>
-                                                   <li className="flex flex-col items-center font-bold my-5"><img src="/material.svg" className='w-12 h-12 p-2 bg-black border-2 border-black' alt="javascript" />Material UI</li>
-                                                    <li className="flex flex-col items-center font-bold my-5"><img src="/redux.svg" className='w-12 h-12 p-2 bg-black border-2 border-black' alt="typescript" />Redux</li>
+                                {UISkills.map(skillItem => <Skills key={skillItem.name} skill={skillItem} />)}
 
                             </ul>
                             <ul>
-                                  <li className="flex flex-col items-center font-bold my-5"><img src="/nodejs.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Node</li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/mongodb.svg" className='w-12 h-12 p-2 bg-black border-2 border-black' alt="javascript" />MongoDB</li>
-                                       <li className="flex flex-col items-center font-bold my-5"><img src="postgresql.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />PostgreSQL</li>
-                               
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/sass.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Sass</li>
-                           
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/storybook.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Storybook</li>
 
+                                {AdditionalSkills.map(skillItem => <Skills key={skillItem.name} skill={skillItem} />)}
                             </ul>
                             <ul>
-                  
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/jest.svg" className='w-12 h-12 p-2 bg-black border-2 border-black' alt="typescript" />Jest</li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/cypress.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Cypress</li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/prisma.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Prisma</li>
-                                  <li className="flex flex-col items-center font-bold my-5"><img src="/git.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Git</li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/docker.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Docker</li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/linux.svg" className='w-12 h-12 p-2 border-2 bg-black border-black' alt="go" />Linux</li>
 
+                                {BackendSkills.map(skillItem => <Skills key={skillItem.name} skill={skillItem} />)}
 
                             </ul>
 
@@ -414,18 +273,10 @@ function App() {
                         </motion.span>
                     </div>
 
-                    {/* <motion.section className="skillContainer max-sm:flex-col max-sm:flex-wrap"
-                        transition={{ type: "spring", bounce: 2.25, duration: 2.2 }}
-                        animate={{ rotateX: 360 }}
-                    >
-                        {coreSkill.map((item: string) => (
-                            <Skills skillName={item} />
-                        ))}
-                    </motion.section> */}
                 </motion.section>
             </Activity>
 
-               <Activity mode={showEducationDialog ? 'visible' : 'hidden'}>
+            <Activity mode={showEducationDialog ? 'visible' : 'hidden'}>
                 <motion.section
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -443,35 +294,11 @@ function App() {
                     <div className='w-1/2 flex flex-col items-center'>
 
 
-                        <h1 className='my-3'>Where I studied...</h1>
+                        <h1 className='my-3 text-4xl font-bold'>Where I studied...</h1>
                         <div className='flex justify-center gap-x-16 w-full'>
                             <ul>
-                                <li className="flex flex-col items-center font-bold my-5">
-                                    <img src="/uea.webp" className='w-12 h-12 p-2 border-2  border-black' alt="UEA logo" />
-                                    <p className='text-lg'>Masters of Science</p>
-                                    <p>University of East Anglia, Norwich, United Kingdom</p>
-                                    <p className='font-normal'>Advanced Computing Science</p>
-                                    <p className='font-normal'>4.0 GPA</p>
-                                    </li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/nit.webp" className='w-12 h-12 p-2 border-2 border-blue-500' alt="NIT logo" />
-                                 <p className='text-lg'>Master's of Technology</p>
-                                    <p>Dr. B. R. Ambedkar National University of Technology, Jalandhar, India</p>
-                                    
-
-                                    <p className='font-normal'>Electronics and Communication Engineering</p>
-                                    <p className='font-normal'>8.22 CGPA</p>
-                                </li>
-                                <li className="flex flex-col items-center font-bold my-5"><img src="/ptu.webp" className='w-12 h-12 p-2 border-2 border-cyan-300' alt="PTU logo" />
-                                 <p className='text-lg'>Bachelor's of Technology</p>
-                                    <p>Punjab Technical University, Jalandhar, India</p>
-                                    
-
-                                    <p className='font-normal'>Electronics and Communication Engineering</p>
-                                    <p className='font-normal'>8.35 CGPA</p></li>
-                         
-
+                                {educationList.map(education => <EducationCard key={education.name} education={education} />)}
                             </ul>
-
                         </div>
 
                         <motion.span className='w-15 fixed bottom-10 cursor-pointer' onClick={closeModal}
@@ -480,14 +307,6 @@ function App() {
                         </motion.span>
                     </div>
 
-                    {/* <motion.section className="skillContainer max-sm:flex-col max-sm:flex-wrap"
-                        transition={{ type: "spring", bounce: 2.25, duration: 2.2 }}
-                        animate={{ rotateX: 360 }}
-                    >
-                        {coreSkill.map((item: string) => (
-                            <Skills skillName={item} />
-                        ))}
-                    </motion.section> */}
                 </motion.section>
             </Activity>
 
